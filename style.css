@@ -37,7 +37,15 @@ body {
   margin-bottom: 0px;
   margin-top: -2rem;
 }
+.container .headline a {
+  margin-top: 6rem;
+  z-index: 8;
+  color: #9c9c9c;
+  font-size: 2rem;
+  text-decoration: none;
+}
 .container .track {
+  z-index: 6;
   margin-top: 6rem;
   margin-left: -20rem;
   width: 70%;
