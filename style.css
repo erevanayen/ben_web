@@ -23,6 +23,10 @@ body {
 .container .headline h2 {
   font-size: 3rem;
   text-shadow: 2px 4px 0px #191919;
+  z-index: 8;
+  color: #9c9c9c;
+  margin-bottom: 0px;
+  margin-top: -2rem;
 }
 .container .headline #ben {
   z-index: 10;
@@ -31,16 +35,10 @@ body {
   z-index: 9;
   margin-top: -3rem;
 }
-.container .headline #cz {
-  z-index: 8;
-  color: #ffffff;
-  margin-bottom: 0px;
-  margin-top: -2rem;
-}
 .container .headline a {
   margin-top: 6rem;
   z-index: 8;
-  color: #9c9c9c;
+  color: #ffffff;
   font-size: 2rem;
   text-decoration: none;
 }
@@ -51,6 +49,31 @@ body {
   width: 70%;
 }
 
+.sidebar {
+  margin-left: -10rem;
+  align-self: center;
+}
+.sidebar h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #9c9c9c;
+  font-family: Righteous;
+  font-size: 3rem;
+  text-shadow: 2px 4px 0px #191919;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.sidebar h2:not(:first-child) {
+  margin-top: -1rem;
+}
+.sidebar h2:first-child {
+  color: #4d4d4d;
+}
+.sidebar h2:last-child {
+  color: #ffffff;
+}
+
 @media (min-width: 1312px) {
   body {
     height: 90vh;
@@ -58,6 +81,10 @@ body {
 
   .track {
     height: 80vh;
+  }
+
+  .sidebar {
+    margin-left: -30rem;
   }
 }
 
