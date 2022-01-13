@@ -1,0 +1,56 @@
+body {
+  background-color: #191919;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Righteous;
+  margin-top: 12rem;
+}
+.container .headline h1 {
+  color: #4d4d4d;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 6rem;
+  text-shadow: 8px 4px 0px #191919;
+}
+.container .headline h2 {
+  font-size: 3rem;
+  text-shadow: 2px 4px 0px #191919;
+}
+.container .headline #ben {
+  z-index: 10;
+}
+.container .headline #fre {
+  z-index: 9;
+  margin-top: -3rem;
+}
+.container .headline #cz {
+  z-index: 8;
+  color: #ffffff;
+  margin-bottom: 0px;
+  margin-top: -2rem;
+}
+.container .track {
+  margin-top: 6rem;
+  margin-left: -20rem;
+  width: 70%;
+}
+
+@media (min-width: 1312px) {
+  body {
+    height: 90vh;
+  }
+
+  .track {
+    height: 80vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
