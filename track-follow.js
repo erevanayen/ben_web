@@ -1,6 +1,9 @@
-var counter = 0;
+var counter1 = 0;
+var counter2 = 0;
 var firstEnter = true;
-var animSpeed = 0.0005;
+const baseSpeed = 0.0005;
+var dotSpeed1 = 0.0005;
+var dotSpeed2 = 0.0005;
 
 const dotRadius = 12;
 
@@ -10,21 +13,37 @@ const dotGroup = document.getElementById("dotGroup");
 const trackPath = document.getElementById("track-path");
 
 // draw SVG elements
-var dots = drawDots(1, 0, 0, dotRadius, dotGroup);
+var dots = drawDots(2, 0, 0, dotRadius, dotGroup);
+dots[0].setAttribute("fill", "#FFC90A");
+dots[1].setAttribute("fill", "#FF11A7");
 
 var trackPathLenght = trackPath.getTotalLength();
 
 function animateDots() {
-  counter = (counter + animSpeed) % 1;
+  counter1 = (counter1 + dotSpeed1) % 1;
+  counter2 = (counter2 + dotSpeed2) % 1;
+  // recalculate speed
+  if (Math.random() <= 0.1) {
+    dotSpeed1 = baseSpeed + baseSpeed * Math.random();
+    dotSpeed2 = baseSpeed + baseSpeed * Math.random();
+  }
   dots[0].setAttribute(
     "transform",
     "translate(" +
-      trackPath.getPointAtLength(counter * trackPathLenght).x +
+      trackPath.getPointAtLength(counter1 * trackPathLenght).x +
       "," +
-      trackPath.getPointAtLength(counter * trackPathLenght).y +
+      trackPath.getPointAtLength(counter1 * trackPathLenght).y +
       ")"
   );
 
+  dots[1].setAttribute(
+    "transform",
+    "translate(" +
+      trackPath.getPointAtLength(counter2 * trackPathLenght).x +
+      "," +
+      trackPath.getPointAtLength(counter2 * trackPathLenght).y +
+      ")"
+  );
   requestAnimationFrame(animateDots);
 }
 
