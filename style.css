@@ -14,7 +14,6 @@ body {
   margin-top: 12rem;
 }
 .container .headline h1 {
-  color: #4d4d4d;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 6rem;
@@ -24,16 +23,20 @@ body {
   font-size: 3rem;
   text-shadow: 2px 4px 0px #191919;
   z-index: 8;
-  color: #9c9c9c;
   margin-bottom: 0px;
   margin-top: -2rem;
 }
 .container .headline #ben {
   z-index: 10;
+  color: #67b8b2;
 }
 .container .headline #fre {
   z-index: 9;
+  color: #faea63;
   margin-top: -3rem;
+}
+.container .headline #cz {
+  color: #f7cf3c;
 }
 .container .headline a {
   margin-top: 6rem;
@@ -57,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  color: #9c9c9c;
+  color: #faea63;
   font-family: Righteous;
   font-size: 3rem;
   text-shadow: 2px 4px 0px #191919;
@@ -68,10 +71,10 @@ body {
   margin-top: -1rem;
 }
 .sidebar h2:first-child {
-  color: #4d4d4d;
+  color: #67b8b2;
 }
 .sidebar h2:last-child {
-  color: #ffffff;
+  color: #f7cf3c;
 }
 
 @media (min-width: 1312px) {

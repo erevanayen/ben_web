@@ -2,6 +2,9 @@ $dark: #191919;
 $grey: #4d4d4d;
 $grey-light: #9c9c9c;
 $white: #ffffff;
+$teal: #67b8b2;
+$yellow: #faea63;
+$orange: #f7cf3c;
 
 body {
   background-color: $dark;
@@ -19,7 +22,6 @@ body {
     margin-top: 12rem;
 
     h1 {
-      color: $grey;
       margin-top: 0px;
       margin-bottom: 0px;
       font-size: 6rem;
@@ -30,18 +32,23 @@ body {
       font-size: 3rem;
       text-shadow: 2px 4px 0px $dark;
       z-index: 8;
-      color: $grey-light;
       margin-bottom: 0px;
       margin-top: -2rem;
     }
 
     #ben {
       z-index: 10;
+      color: $teal;
     }
 
     #fre {
       z-index: 9;
+      color: $yellow;
       margin-top: -3rem;
+    }
+
+    #cz {
+      color: $orange;
     }
 
     a {
@@ -68,7 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    color: $grey-light;
+    color: $yellow;
     font-family: Righteous;
 
     font-size: 3rem;
@@ -82,11 +89,11 @@ body {
     }
 
     &:first-child {
-      color: $grey;
+      color: $teal;
     }
 
     &:last-child {
-      color: $white;
+      color: $orange;
     }
   }
 }

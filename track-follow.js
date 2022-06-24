@@ -14,8 +14,8 @@ const trackPath = document.getElementById("track-path");
 
 // draw SVG elements
 var dots = drawDots(2, 0, 0, dotRadius, dotGroup);
-dots[0].setAttribute("fill", "#FFC90A");
-dots[1].setAttribute("fill", "#FF11A7");
+dots[0].setAttribute("fill", "#f7cf3c");
+dots[1].setAttribute("fill", "#3c6b67");
 
 var trackPathLenght = trackPath.getTotalLength();
 
